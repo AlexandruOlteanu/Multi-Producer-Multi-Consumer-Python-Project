@@ -12,13 +12,19 @@ class Producer(Thread):
 
     def run(self):
 
-        producer_id = self.marketplace.register_producer()
+        # Inregistram un nou producator in marketplace
+        identifier_producer = self.marketplace.register_producer()
         while True:
-            # iterate through -> publish the prod to market
-            for event_product, quantity, wait_time in self.products:
-                for _ in range(quantity):
-                    # true -> publish and waits before publishing next item
-                    if self.marketplace.publish(producer_id, event_product):
+            for current_product in self.products:
+                identifier_product = current_product[0]
+                quantity = current_product[1]
+                wait_time = current_product[2]
+                products_to_add = quantity
+                while True:
+                    if products_to_add == 0:
+                        break 
+                    products_to_add -= 1
+                    if self.marketplace.publish(identifier_producer, identifier_product):
                         sleep(wait_time)
                     else:
                         sleep(self.republish_wait_time)
