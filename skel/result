@@ -1,30 +1,2624 @@
 Starting test 1
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
 Finished test 1
-Test 1:		PASSED
+Test 1:		FAILED
 Starting test 2
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
 Finished test 2
-Test 2:		PASSED
+Test 2:		FAILED
 Starting test 3
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons3:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons5:
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
 Finished test 3
-Test 3:		PASSED
+Test 3:		FAILED
 Starting test 4
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
 Finished test 4
-Test 4:		PASSED
+Test 4:		FAILED
 Starting test 5
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons5:
+Traceback (most recent call last):
+Exception in thread cons4:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
 Finished test 5
-Test 5:		PASSED
+Test 5:		FAILED
 Starting test 6
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Exception in thread cons4:
+Traceback (most recent call last):
+Exception in thread cons5:
+Traceback (most recent call last):
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
 Finished test 6
-Test 6:		PASSED
+Test 6:		FAILED
 Starting test 7
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons3:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons7:
+Exception in thread cons5:
+Traceback (most recent call last):
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons10:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons9:
+Traceback (most recent call last):
+Exception in thread cons4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
 Finished test 7
-Test 7:		PASSED
+Test 7:		FAILED
 Starting test 8
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons7:
+Traceback (most recent call last):
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons10:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons14:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons15:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons16:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons13:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons20:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons22:
+Traceback (most recent call last):
+Exception in thread cons11:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons17:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons18:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons27:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons21:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons25:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons33:
+Traceback (most recent call last):
+Exception in thread cons26:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons35:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons30:
+Traceback (most recent call last):
+Exception in thread cons40:
+Traceback (most recent call last):
+Exception in thread cons9:
+Traceback (most recent call last):
+Exception in thread cons32:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons44:
+Exception in thread cons45:
+    while count < quantity:
+Exception in thread cons28:
+Exception in thread cons29:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons38:
+Traceback (most recent call last):
+Exception in thread cons31:
+Exception in thread cons50:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons41:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons23:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons47:
+Exception in thread cons48:
+Traceback (most recent call last):
+Exception in thread cons49:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons12:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons42:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons24:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons46:
+Traceback (most recent call last):
+Exception in thread cons37:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons39:
+Traceback (most recent call last):
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons34:
+Traceback (most recent call last):
+Exception in thread cons43:
+Traceback (most recent call last):
+    while count < quantity:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons36:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
 Finished test 8
-Test 8:		PASSED
+Test 8:		FAILED
 Starting test 9
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons3:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons5:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
 Finished test 9
-Test 9:		PASSED
+Test 9:		FAILED
 Starting test 10
+Exception in thread cons1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons2:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons3:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+Exception in thread cons4:
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons5:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons6:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons8:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons9:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons10:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons11:
+Traceback (most recent call last):
+    while count < quantity:
+Exception in thread cons7:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons13:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Exception in thread cons14:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons16:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons15:
+Traceback (most recent call last):
+Exception in thread cons17:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons18:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+Exception in thread cons21:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons24:
+Traceback (most recent call last):
+    self.run()
+Exception in thread cons20:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons26:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons27:
+Traceback (most recent call last):
+Exception in thread cons28:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons34:
+Traceback (most recent call last):
+    self.run()
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons37:
+Traceback (most recent call last):
+Exception in thread cons19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons39:
+Traceback (most recent call last):
+Exception in thread cons25:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons29:
+Traceback (most recent call last):
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons41:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Exception in thread cons43:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons33:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons35:
+Traceback (most recent call last):
+Exception in thread cons47:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Exception in thread cons30:
+Traceback (most recent call last):
+Exception in thread cons42:
+Traceback (most recent call last):
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Exception in thread cons32:
+Traceback (most recent call last):
+Exception in thread cons52:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons54:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons46:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons36:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons49:
+Traceback (most recent call last):
+Exception in thread cons23:
+Traceback (most recent call last):
+Exception in thread cons50:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons60:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons22:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons53:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons55:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons56:
+Traceback (most recent call last):
+Exception in thread cons67:
+Traceback (most recent call last):
+Exception in thread cons40:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons58:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons31:
+Traceback (most recent call last):
+Exception in thread cons71:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons72:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons62:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons57:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons98:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons51:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons73:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons74:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons89:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons65:
+Traceback (most recent call last):
+Exception in thread cons66:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons79:
+Traceback (most recent call last):
+Exception in thread cons69:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons101:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons85:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons75:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons88:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons90:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons91:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons68:
+Traceback (most recent call last):
+Exception in thread cons111:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons95:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons96:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons81:
+Traceback (most recent call last):
+Exception in thread cons115:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons100:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons59:
+Traceback (most recent call last):
+Exception in thread cons119:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons44:
+Traceback (most recent call last):
+Exception in thread cons61:
+Exception in thread cons86:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons105:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons87:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons127:
+Traceback (most recent call last):
+Exception in thread cons108:
+Traceback (most recent call last):
+Exception in thread cons76:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons128:
+Traceback (most recent call last):
+Exception in thread cons129:
+Traceback (most recent call last):
+Exception in thread cons93:
+Traceback (most recent call last):
+Exception in thread cons110:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons77:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons112:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons48:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons135:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons139:
+Traceback (most recent call last):
+Exception in thread cons140:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons70:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons117:
+Traceback (most recent call last):
+Exception in thread cons38:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons147:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons104:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons125:
+Exception in thread cons152:
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Traceback (most recent call last):
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons106:
+Traceback (most recent call last):
+Exception in thread cons126:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons156:
+Traceback (most recent call last):
+Exception in thread cons157:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons109:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+Exception in thread cons131:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons132:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons161:
+Exception in thread cons78:
+Traceback (most recent call last):
+Exception in thread cons113:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons137:
+Traceback (most recent call last):
+Exception in thread cons164:
+Exception in thread cons114:
+Exception in thread cons80:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons141:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons170:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons173:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons146:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Exception in thread cons179:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons180:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons123:
+Traceback (most recent call last):
+Exception in thread cons124:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    self.run()
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons63:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons64:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons189:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons193:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons194:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons199:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons136:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons166:
+Traceback (most recent call last):
+Exception in thread cons167:
+Exception in thread cons168:
+Exception in thread cons142:
+Traceback (most recent call last):
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons82:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons118:
+Traceback (most recent call last):
+Exception in thread cons102:
+Traceback (most recent call last):
+Exception in thread cons176:
+Traceback (most recent call last):
+Exception in thread cons178:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons122:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons45:
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Exception in thread cons153:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons155:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons190:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons197:
+Traceback (most recent call last):
+Exception in thread cons134:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons171:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons116:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons145:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons177:
+Traceback (most recent call last):
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons84:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons150:
+Traceback (most recent call last):
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons158:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons160:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Exception in thread cons94:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons200:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons143:
+Traceback (most recent call last):
+Exception in thread cons174:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons103:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons121:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+Exception in thread cons151:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons184:
+Traceback (most recent call last):
+Exception in thread cons185:
+Traceback (most recent call last):
+Exception in thread cons107:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons186:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons130:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons192:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons198:
+Traceback (most recent call last):
+Exception in thread cons97:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons138:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons144:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons175:
+Traceback (most recent call last):
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons148:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons183:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons187:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons188:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons163:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+Exception in thread cons165:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons83:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons120:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons92:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons196:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons99:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Exception in thread cons172:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons149:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons182:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Exception in thread cons195:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+Exception in thread cons162:
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons169:
+Traceback (most recent call last):
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+    self.run()
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+Exception in thread cons191:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Exception in thread cons133:
+Traceback (most recent call last):
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    self.run()
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+Exception in thread cons154:
+Traceback (most recent call last):
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+Exception in thread cons159:
+Traceback (most recent call last):
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    while count < quantity:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    while count < quantity:
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+Exception in thread cons181:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    self.run()
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 60, in run
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    operation_func(cart_id, operation["product"], operation["quantity"])
+  File "/home/alexandru_olteanu/Desktop/Multi-Producer-Multi-Consumer-Python-Project/skel/tema/consumer.py", line 35, in add_to_cart
+    while count < quantity:
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Tea'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+    while count < quantity:
+TypeError: '<' not supported between instances of 'int' and 'Coffee'
+TypeError: '<' not supported between instances of 'int' and 'Tea'
 Finished test 10
-Test 10:		PASSED
+Test 10:		FAILED
+
+Run pylint
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/usr/lib/python3.10/site-packages/pylint/__main__.py", line 10, in <module>
+    pylint.run_pylint()
+  File "/usr/lib/python3.10/site-packages/pylint/__init__.py", line 33, in run_pylint
+    from pylint.lint import Run as PylintRun
+  File "/usr/lib/python3.10/site-packages/pylint/lint/__init__.py", line 19, in <module>
+    from pylint.config.exceptions import ArgumentPreprocessingError
+  File "/usr/lib/python3.10/site-packages/pylint/config/__init__.py", line 25, in <module>
+    from pylint.config.arguments_provider import UnsupportedAction
+  File "/usr/lib/python3.10/site-packages/pylint/config/arguments_provider.py", line 15, in <module>
+    from pylint.config.arguments_manager import _ArgumentsManager
+  File "/usr/lib/python3.10/site-packages/pylint/config/arguments_manager.py", line 25, in <module>
+    from pylint import utils
+  File "/usr/lib/python3.10/site-packages/pylint/utils/__init__.py", line 9, in <module>
+    from pylint.utils.ast_walker import ASTWalker
+  File "/usr/lib/python3.10/site-packages/pylint/utils/ast_walker.py", line 13, in <module>
+    from astroid import nodes
+  File "/usr/lib/python3.10/site-packages/astroid/__init__.py", line 46, in <module>
+    from astroid import inference, raw_building
+  File "/usr/lib/python3.10/site-packages/astroid/inference.py", line 17, in <module>
+    from astroid import bases, constraint, decorators, helpers, nodes, protocols, util
+  File "/usr/lib/python3.10/site-packages/astroid/helpers.py", line 11, in <module>
+    from astroid import bases, manager, nodes, raw_building, util
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 643, in <module>
+    _astroid_bootstrapping()
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 544, in _astroid_bootstrapping
+    astroid_builtin = builder.inspect_build(builtins)
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 404, in inspect_build
+    self.object_build(node, module)
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 447, in object_build
+    self.object_build(class_node, member)
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 451, in object_build
+    object_build_methoddescriptor(node, member, name)
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 284, in object_build_methoddescriptor
+    func = build_function(
+  File "/usr/lib/python3.10/site-packages/astroid/raw_building.py", line 168, in build_function
+    doc_node=nodes.Const(value=doc) if doc else None,
+  File "/usr/lib/python3.10/site-packages/astroid/nodes/node_classes.py", line 2003, in __init__
+    super().__init__(
+KeyboardInterrupt
