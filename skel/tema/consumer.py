@@ -60,5 +60,5 @@ class Consumer(Thread):
 
         final_result = "\n".join(result)
 
-        with self.marketplace.order_lock:
+        with self.marketplace.lock_order:
             print(final_result)
