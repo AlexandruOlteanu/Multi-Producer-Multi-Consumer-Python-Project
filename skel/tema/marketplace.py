@@ -48,60 +48,28 @@ class Marketplace:
         return identifier_producer
 
     def publish(self, identifier_producer, product):
-        """
-        Adds the product provided by the producer to the marketplace
 
-        :type identifier_producer: String
-        :param identifier_producer: producer id
-
-        :type product: Product
-        :param product: the Product that will be published in the Marketplace
-
-        :returns True or False. If the caller receives False, it should wait and then try again.
-        """
-        try:
-            # add prod to the list of published
-            self.database['available_products'][identifier_producer].append(product)
-            self.logger.info(
-                "Producer %d published %s", identifier_producer, product.__str__())
-            # update dict to include new products
-            self.database['marketplace_products'][product] = identifier_producer
-            return True
-        except Exception as exc_catch:
-            self.logger.error("Error publishing the product: %s", str(exc_catch))
-            return False
+        #Cand un produs este publicat, acesta ajunge atat ca fiind valabil pentru cumparare
+        #dar este si contorizat in marketplace. Astfel, produsul este pus in dictionar corespunzator
+        self.logger.info("Operation Accepted: Product %s was succesfully published by producer with id %d", product.__str__(), identifier_producer)
+        self.database['available_products'][identifier_producer].append(product)
+        self.database['marketplace_products'][product] = identifier_producer
+        return True
 
     def new_cart(self):
-        """
-        Creates a new cart for the consumer
 
-        :returns an int representing the identifier_cart
-        """
-        with self.lock_cart:
-            try:
-                identifier_cart = self.identifier_cart
-                # increment for uniq id
-                self.identifier_cart += 1
-                # new cart -> adding and empty list
-                self.database['reserved_products'][identifier_cart] = []
-                self.logger.info("Created new cart with id: %d", identifier_cart)
-            except Exception as exc_catch:
-                self.logger.error("Error creating new cart: %s", str(exc_catch))
-            finally:
-                return identifier_cart
+        #Deschidem lock-ul pentru a proteja urmatoarera zona de cod
+        self.lock_cart.acquire()
+        #Odata ce un nou cart se creaza, instantiem o noua lista goala 
+        #in dictionar pentru a putea in viitor sa adaugam noi produse
+        self.logger.info("Operation Accepted: Sucessfully created cart with id: %d", self.identifier_cart)
+        self.database['reserved_products'][self.identifier_cart] = []
+        self.identifier_cart = self.identifier_cart + 1
+        self.lock_cart.release()
+        return self.identifier_cart - 1
 
     def add_to_cart(self, identifier_cart, product):
-        """
-        Adds a product to the given cart. The method returns
 
-        :type identifier_cart: Int
-        :param identifier_cart: id cart
-
-        :type product: Product
-        :param product: the product to add to cart
-
-        :returns True or False. If the caller receives False, it should wait and then try again
-        """
         try:
             # I used the next function to find the id for the product
             id_producer = next((i for i in range(self.identifier_producer)
@@ -121,15 +89,7 @@ class Marketplace:
             return False
 
     def remove_from_cart(self, identifier_cart, product):
-        """
-        Removes a product from cart.
 
-        :type identifier_cart: Int
-        :param identifier_cart: id cart
-
-        :type product: Product
-        :param product: the product to remove from cart
-        """
         try:
             # if prod is in cart
             if product in self.database['reserved_products'][identifier_cart]:
@@ -145,12 +105,7 @@ class Marketplace:
             self.logger.error("Error removing product from cart: %s", str(exc_catch))
 
     def place_order(self, identifier_cart):
-        """
-        Return a list with all the products in the cart.
 
-        :type identifier_cart: Int
-        :param identifier_cart: id cart
-        """
         with self.lock_order:
             try:
                 # copy the products from cart
@@ -166,10 +121,7 @@ class Marketplace:
                 return []
 
 
-"""
-    UnitTest Marketplace - Test marketplace
-"""
-
+#Tests for Marketplace flow
 
 class TestMarketplace(unittest.TestCase):
 
