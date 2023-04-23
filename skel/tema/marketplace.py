@@ -95,18 +95,29 @@ class Marketplace:
 
         #Daca produsul se afla in lista de produse a cosului dat ca 
         #parametru, este scos si adaugat in lista de produse valabile din marketplace
-        if product in self.database['reserved_products'][identifier_cart]:
-            identifier_producer = self.database['marketplace_products'][product]
-            self.database['available_products'][identifier_producer].append(product)
-            self.database['reserved_products'][identifier_cart].remove(product)
-            self.logger.info("Operation Accepted: Succesfully removed product %s in cart with id %d", product.__str__(), identifier_cart)
+        cart_products = self.database['reserved_products'].get(identifier_cart, [])
+        if product in cart_products:
+            # Get the producer of the product from the marketplace
+            producer = self.database['marketplace_products'].get(product)
+            if producer is not None:
+                # Add the product to the available products of the producer
+                available_products = self.database['available_products'].get(producer, [])
+                available_products.append(product)
+                self.database['available_products'][producer] = available_products
+                # Remove the product from the reserved products of the cart
+                reserved_products = self.database['reserved_products'].get(identifier_cart, [])
+                reserved_products.remove(product)
+                self.database['reserved_products'][identifier_cart] = reserved_products
 
     def place_order(self, identifier_cart):
 
         #Deschidem lock-ul pentru a proteja urmatoarera zona de cod
         self.lock_order.acquire()
-        order_to_place = self.database['reserved_products'][identifier_cart].copy()
-        self.database['reserved_products'][identifier_cart].clear()
+        reserved_products = self.database.get('reserved_products', {})
+        cart_products = reserved_products.get(identifier_cart, [])
+        order_to_place = list(cart_products)
+        reserved_products[identifier_cart] = []
+        self.database['reserved_products'] = reserved_products
         self.logger.info("Operation Accepted: Succesfully placed order %s from cart with id %d", order_to_place.__str__(), identifier_cart)
         self.lock_order.release()
         return order_to_place
