@@ -71,54 +71,45 @@ class Marketplace:
     def add_to_cart(self, identifier_cart, product):
 
         try:
-            # I used the next function to find the id for the product
-            id_producer = next((i for i in range(self.identifier_producer)
-                                if product in self.database['available_products'][i]), None)
-            # If prod is available -> add to cart and put log message
-            if id_producer is not None:
+            #Pentru a putea adauga un produs in cos, acesta trebuie sa se afle
+            #in lista de produse valabile.
+            identifier_producer = -1
+            for i in range(self.identifier_producer):
+                if product in self.database['available_products'][i]:
+                    identifier_producer = i
+                    break
+            #Daca produsul este valabil, il adaugam in lista de produse 
+            #rezervate si il scoatem din cea de produse valabile
+            if identifier_producer != -1:
+                self.database['available_products'][identifier_producer].remove(product)
                 self.database['reserved_products'][identifier_cart].append(product)
-                self.database['available_products'][id_producer].remove(product)
-
-                self.logger.info(f"Succesfully added a new product to the cart {identifier_cart}: {product}")
-                self.logger.info(f"Succesfully removed a product from producer {id_producer}: {product}")
-
+                self.logger.info("Operation Accepted: Succesfully removed product %s from producer with id %d", product.__str__(), identifier_producer)
+                self.logger.info("Operation Accepted: Succesfully added product %s in cart with id %d", product.__str__(), identifier_cart)
                 return True
             return False
-        except Exception as exc_catch:
-            self.logger.error("Error adding product to cart: %s", str(exc_catch))
+        except Exception as thrown_exception:
+            self.logger.error("Operation Rejected: Error adding product to cart: %s", thrown_exception.__str__())
             return False
 
     def remove_from_cart(self, identifier_cart, product):
 
-        try:
-            # if prod is in cart
-            if product in self.database['reserved_products'][identifier_cart]:
-                # get id prod from all products of the prod
-                identifier_producer = self.database['marketplace_products'][product]
-                # add prod to producer list & remove from cart
-                self.database['available_products'][identifier_producer].append(product)
-                self.database['reserved_products'][identifier_cart].remove(product)
-
-                self.logger.info(
-                    "Succesfully removed product %s from cart %d", product.__str__(), identifier_cart)
-        except Exception as exc_catch:
-            self.logger.error("Error removing product from cart: %s", str(exc_catch))
+        #Daca produsul se afla in lista de produse a cosului dat ca 
+        #parametru, este scos si adaugat in lista de produse valabile din marketplace
+        if product in self.database['reserved_products'][identifier_cart]:
+            identifier_producer = self.database['marketplace_products'][product]
+            self.database['available_products'][identifier_producer].append(product)
+            self.database['reserved_products'][identifier_cart].remove(product)
+            self.logger.info("Operation Accepted: Succesfully removed product %s in cart with id %d", product.__str__(), identifier_cart)
 
     def place_order(self, identifier_cart):
 
-        with self.lock_order:
-            try:
-                # copy the products from cart
-                order = self.database['reserved_products'][identifier_cart].copy()
-                # clear the cart
-                self.database['reserved_products'][identifier_cart].clear()
-                # return order with the content of the cart
-                self.logger.info(
-                    "The order placed %s from cart with id: %d", order.__str__(), identifier_cart)
-                return order
-            except Exception as exc_catch:
-                self.logger.error("Error placing order: %s", str(exc_catch))
-                return []
+        #Deschidem lock-ul pentru a proteja urmatoarera zona de cod
+        self.lock_order.acquire()
+        order_to_place = self.database['reserved_products'][identifier_cart].copy()
+        self.database['reserved_products'][identifier_cart].clear()
+        self.logger.info("Operation Accepted: Succesfully placed order %s from cart with id %d", order_to_place.__str__(), identifier_cart)
+        self.lock_order.release()
+        return order_to_place
 
 
 #Tests for Marketplace flow
