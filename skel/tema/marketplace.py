@@ -36,7 +36,10 @@ class Marketplace:
 
     def register_producer(self):
 
+        #Deschidem lock-ul pentru a proteja urmatoarera zona de cod
         self.lock_producer.acquire()
+        #Obtinem urmatorul id pentru producator, apoi il asignam in dictionar cu
+        #o lista goala
         self.identifier_producer = self.identifier_producer + 1
         identifier_producer = self.identifier_producer - 1
         self.logger.info("Operation Accepted: Succesfully registered producer with id: %s", identifier_producer)
