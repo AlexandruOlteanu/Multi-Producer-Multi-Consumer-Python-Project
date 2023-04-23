@@ -128,104 +128,70 @@ class Marketplace:
 #Tests for Marketplace flow
 
 class TestMarketplace(unittest.TestCase):
-
     def setUp(self):
-        # initialise setup for testing
-        self.marketplace = Marketplace(10)
-        self.identifier_producer = self.marketplace.register_producer()
-
-    def get_product_dict(self):
-        # one asset for testing
-        return {
-            "product_type": "Coffee",
-            "name": "Eritreea",
-            "acidity": 3.15,
-            "roast_level": "HIGH",
-            "price": 2.1
-        }
+        self.marketplace = Marketplace(5)
 
     def test_register_producer(self):
-        """ Test register """
-        identifier_producer = self.marketplace.register_producer()
-        self.assertEqual(identifier_producer, 1)
+        producer_id = self.marketplace.register_producer()
+        self.assertEqual(producer_id, 1)
+
+        producer_id_2 = self.marketplace.register_producer()
+        self.assertEqual(producer_id_2, 2)
 
     def test_publish(self):
-        """ Test publish """
-        product_dict = self.get_product_dict()
-        product = str(product_dict)
-        # publish product
-        result = self.marketplace.publish(self.identifier_producer, product)
-        # if true => ensures that the product was published
-        self.assertTrue(result)
-        # makes sure that product was added to the list
-        self.assertIn(product, self.marketplace.database['available_products'][self.identifier_producer])
-        # makes sure that all products dict is up with new product
-        self.assertEqual(self.marketplace.database['marketplace_products'][product], self.identifier_producer)
+        producer_id = self.marketplace.register_producer()
+        product = Product('product', 10)
+
+        self.assertTrue(self.marketplace.publish(producer_id, product))
+        self.assertEqual(len(self.marketplace.database['available_products'][producer_id]), 1)
+
+        self.assertFalse(self.marketplace.publish(producer_id, product))
+        self.assertEqual(len(self.marketplace.database['available_products'][producer_id]), 1)
 
     def test_new_cart(self):
-        """ Test new_cart """
-        identifier_cart = self.marketplace.new_cart()
-        # makes sure that new_cart is correctly init a new cart
-        self.assertEqual(identifier_cart, 0)
+        cart_id = self.marketplace.new_cart()
+        self.assertEqual(cart_id, 0)
 
-    # test add
+        cart_id_2 = self.marketplace.new_cart()
+        self.assertEqual(cart_id_2, 1)
+
     def test_add_to_cart(self):
-        """ Test add_to_cart """
-        product_dict = self.get_product_dict()
-        product = str(product_dict)
-        # check if it published before adding to cart
-        self.marketplace.publish(self.identifier_producer, product)
+        producer_id = self.marketplace.register_producer()
+        product = Product('product', 10)
 
-        identifier_cart = self.marketplace.new_cart()
-        result = self.marketplace.add_to_cart(identifier_cart, product)
-        # check if it is added to cart & add to correct cart & 
-        # removed from the list of products by the prod
-        self.assertTrue(result)
-        self.assertIn(product, self.marketplace.database['reserved_products'][identifier_cart])
-        self.assertNotIn(product, self.marketplace.database['available_products'][self.identifier_producer])
+        cart_id = self.marketplace.new_cart()
+        self.assertTrue(self.marketplace.add_to_cart(cart_id, product))
+        self.assertEqual(len(self.marketplace.database['reserved_products'][cart_id]), 1)
 
-    # test remove
+        self.assertFalse(self.marketplace.add_to_cart(cart_id, product))
+        self.assertEqual(len(self.marketplace.database['reserved_products'][cart_id]), 1)
+
+        product_2 = Product('product_2', 20)
+        self.assertFalse(self.marketplace.add_to_cart(cart_id, product_2))
+        self.assertEqual(len(self.marketplace.database['reserved_products'][cart_id]), 1)
+
     def test_remove_from_cart(self):
-        """ Test remove """
-        product_dict = self.get_product_dict()
-        product = str(product_dict)
-        # check if published
-        self.marketplace.publish(self.identifier_producer, product)
-        # add to the cart
-        identifier_cart = self.marketplace.new_cart()
-        self.marketplace.add_to_cart(identifier_cart, product)
-        # remove from cart -> add back to the list of published
-        self.marketplace.remove_from_cart(identifier_cart, product)
-        # check if removed & added back to list of prod
-        self.assertNotIn(product, self.marketplace.database['reserved_products'][identifier_cart])
-        self.assertIn(product, self.marketplace.database['available_products'][self.identifier_producer])
+        producer_id = self.marketplace.register_producer()
+        product = Product('product', 10)
 
-    # test order
+        cart_id = self.marketplace.new_cart()
+        self.marketplace.add_to_cart(cart_id, product)
+        self.marketplace.remove_from_cart(cart_id, product)
+        self.assertEqual(len(self.marketplace.database['reserved_products'][cart_id]), 0)
+        self.assertEqual(len(self.marketplace.database['available_products'][producer_id]), 1)
+
+        self.marketplace.remove_from_cart(cart_id, product)
+        self.assertEqual(len(self.marketplace.database['reserved_products'][cart_id]), 0)
+        self.assertEqual(len(self.marketplace.database['available_products'][producer_id]), 1)
+
     def test_place_order(self):
-        """ Test order """
-        product_dict1 = self.get_product_dict()
-        product1 = str(product_dict1)
-        # publish it
-        self.marketplace.publish(self.identifier_producer, product1)
-        # second asset
-        product_dict2 = {
-            "product_type": "Tea",
-            "name": "Raspberry",
-            "type": "Red",
-            "price": 10
-        }
-        # publish it
-        product2 = str(product_dict2)
-        self.marketplace.publish(self.identifier_producer, product2)
-        # new_cart & add both to the consumer cart
-        identifier_cart = self.marketplace.new_cart()
-        self.marketplace.add_to_cart(identifier_cart, product1)
-        self.marketplace.add_to_cart(identifier_cart, product2)
-        # place the order
-        order = self.marketplace.place_order(identifier_cart)
-        # check correct number of products 
-        # check that the products are corect & prod removed from customer cart
-        self.assertEqual(len(order), 2)
-        self.assertIn(product1, order)
-        self.assertIn(product2, order)
-        self.assertEqual(len(self.marketplace.database['reserved_products'][identifier_cart]), 0)
+        producer_id = self.marketplace.register_producer()
+        product = Product('product', 10)
+
+        cart_id = self.marketplace.new_cart()
+        self.marketplace.add_to_cart(cart_id, product)
+        order = self.marketplace.place_order(cart_id)
+        self.assertEqual(order, [product])
+        self.assertEqual(len(self.marketplace.database['reserved_products'][cart_id]), 0)
+
+        cart_id_2 = self.marketplace.new_cart()
