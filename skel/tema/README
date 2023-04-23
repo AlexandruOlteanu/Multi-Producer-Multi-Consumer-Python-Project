@@ -1,0 +1,17 @@
+<Copyright Alexandru Olteanu, grupa 332CA, alexandruolteanu2001@gmail.com>
+
+    Tema a fost una interesanta, prima mea tangenta mai serioasa cu Python.
+In rezolvarea problemei am folosit concepte de baza de lucru thread-safe, 
+folosind un mutex (lock) pentru fiecare componenta ce ar putea fi apelata 
+simultan de mai multe operatiuni pornite. Spre exemplu, crearea unui nou 
+cos de cumparaturi in care un utilizator poate retine produsele dorite
+reprezinta o operatie care nu este thread safe by default deoarece pot 
+fi create mai multe cosuri in acelasi timp. Pe de alta parte, o actiune
+precum scoaterea unui anumit produs dintr-un cos este thread safe deoarece 
+nu se poate apela mai mult de o data pentru acelasi id de produs / cos.
+    In rest, am incercat sa mentin implementarea cat mai curata, am folosit 
+in mare parte dictionare carora le corespund liste de lemente sau simple
+valori incrementale. Pe partea de logging, am creat o configurare de logger
+clasica din python si am redirectionat outputul catre fisierul marketplace.log.
+    Tema mi s-a parut de o dificultate medie, dar buna, cel putin pentru mine 
+care nu mai lucrasem asa mult in python cu exceptia materiei de Asc. Thanks!
