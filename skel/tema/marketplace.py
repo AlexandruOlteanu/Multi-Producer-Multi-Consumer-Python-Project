@@ -80,9 +80,14 @@ class Marketplace:
                     break
             #Daca produsul este valabil, il adaugam in lista de produse 
             #rezervate si il scoatem din cea de produse valabile
-            if identifier_producer != -1:
-                self.database['available_products'][identifier_producer].remove(product)
-                self.database['reserved_products'][identifier_cart].append(product)
+            if identifier_producer >= 0:
+                available_products = self.database['available_products'][identifier_producer]
+                reserved_products = self.database['reserved_products'][identifier_cart]
+                available_products.remove(product)
+                reserved_products.append(product)
+                producer_id = identifier_producer
+                cart_id = identifier_cart
+                product_info = product.__str__()
                 self.logger.info("Operation Accepted: Succesfully removed product %s from producer with id %d", product.__str__(), identifier_producer)
                 self.logger.info("Operation Accepted: Succesfully added product %s in cart with id %d", product.__str__(), identifier_cart)
                 return True
@@ -97,14 +102,11 @@ class Marketplace:
         #parametru, este scos si adaugat in lista de produse valabile din marketplace
         cart_products = self.database['reserved_products'].get(identifier_cart, [])
         if product in cart_products:
-            # Get the producer of the product from the marketplace
             producer = self.database['marketplace_products'].get(product)
             if producer is not None:
-                # Add the product to the available products of the producer
                 available_products = self.database['available_products'].get(producer, [])
                 available_products.append(product)
                 self.database['available_products'][producer] = available_products
-                # Remove the product from the reserved products of the cart
                 reserved_products = self.database['reserved_products'].get(identifier_cart, [])
                 reserved_products.remove(product)
                 self.database['reserved_products'][identifier_cart] = reserved_products
