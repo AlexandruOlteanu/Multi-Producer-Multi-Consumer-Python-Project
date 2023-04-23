@@ -17,23 +17,22 @@ class Marketplace:
         self.identifier_cart = 0
         self.identifier_producer = 0
 
-        self.logger = self.configure_logger()
-
-        self.database = {}
-        for key in ['reserved_products', 'marketplace_products', 'available_products']:
-            self.database[key] = {}
-
-    def configure_logger(self):
-        """ logger used for logging helping for debug """
+        #Creem configurarile pentru afisarea logg-urilor in fisierul maketplace.log
         logging.basicConfig(
             level=logging.DEBUG,
-            filename='marketplace.log',
-            filemode='w',
+            handlers=[
+                logging.FileHandler('marketplace.log', mode='w'),
+            ],
             format='[%(asctime)s] - %(levelname)s - %(message)s',
             datefmt='%Y-%m-%d %H:%M:%S'
         )
 
-        return logging.getLogger()
+        self.logger = logging.getLogger(__name__)
+
+        #Initializam un dictionar pentru a tine evidenta produselor existente pe categorii
+        self.database = {}
+        for key in ['reserved_products', 'marketplace_products', 'available_products']:
+            self.database[key] = {}
 
     def register_producer(self):
         """
