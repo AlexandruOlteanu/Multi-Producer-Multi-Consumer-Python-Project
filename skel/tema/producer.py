@@ -24,7 +24,7 @@ class Producer(Thread):
                 products_to_add = quantity
                 while True:
                     if products_to_add == 0:
-                        break 
+                        break
                     products_to_add -= 1
                     #Daca produsul este acceptat vom astepta un timp predefinit
                     #produs de aceasta operatiune, daca nu, asteptam sa incercam din nou

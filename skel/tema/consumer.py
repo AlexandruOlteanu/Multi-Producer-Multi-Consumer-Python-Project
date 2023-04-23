@@ -21,20 +21,20 @@ class Consumer(Thread):
             added_products = 0
             while True:
                 available_product = self.marketplace.add_to_cart(identifier_cart, product)
-                if available_product == False:
+                if available_product is False:
                     sleep(self.retry_wait_time)
                 else:
                     added_products += 1
                 if added_products == quantity:
                     break
- 
+
         # Cat timp inca avem produse ce trebuie scoase din cos, se va apela
         # functia de remove_from_cart din clasa Marketplace
         def remove_from_cart(product, quantity, identifier_cart):
             products_to_delete = quantity
             while True:
                 if products_to_delete == 0:
-                    break 
+                    break
                 products_to_delete -= 1
                 self.marketplace.remove_from_cart(identifier_cart, product)
 

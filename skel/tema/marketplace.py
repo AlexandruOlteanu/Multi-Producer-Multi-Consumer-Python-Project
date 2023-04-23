@@ -3,12 +3,12 @@ import logging
 import unittest
 
 class Marketplace:
-    
+
     def __init__(self, queue_size_per_producer):
 
         self.queue_size_per_producer = queue_size_per_producer
 
-        #Creem lock-urile pentru a putea lucra thread safe cu comenzile, 
+        #Creem lock-urile pentru a putea lucra thread safe cu comenzile,
         #producatorii si operatiile de aprovizionare de stock sau cumparare
         self.lock_order = Lock()
         self.lock_cart = Lock()
@@ -60,7 +60,7 @@ class Marketplace:
 
         #Deschidem lock-ul pentru a proteja urmatoarera zona de cod
         self.lock_cart.acquire()
-        #Odata ce un nou cart se creaza, instantiem o noua lista goala 
+        #Odata ce un nou cart se creaza, instantiem o noua lista goala
         #in dictionar pentru a putea in viitor sa adaugam noi produse
         self.logger.info("Operation Accepted: Sucessfully created cart with id: %d", self.identifier_cart)
         self.database['reserved_products'][self.identifier_cart] = []
@@ -78,16 +78,13 @@ class Marketplace:
                 if product in self.database['available_products'][i]:
                     identifier_producer = i
                     break
-            #Daca produsul este valabil, il adaugam in lista de produse 
+            #Daca produsul este valabil, il adaugam in lista de produse
             #rezervate si il scoatem din cea de produse valabile
             if identifier_producer >= 0:
                 available_products = self.database['available_products'][identifier_producer]
                 reserved_products = self.database['reserved_products'][identifier_cart]
                 available_products.remove(product)
                 reserved_products.append(product)
-                producer_id = identifier_producer
-                cart_id = identifier_cart
-                product_info = product.__str__()
                 self.logger.info("Operation Accepted: Succesfully removed product %s from producer with id %d", product.__str__(), identifier_producer)
                 self.logger.info("Operation Accepted: Succesfully added product %s in cart with id %d", product.__str__(), identifier_cart)
                 return True
@@ -98,7 +95,7 @@ class Marketplace:
 
     def remove_from_cart(self, identifier_cart, product):
 
-        #Daca produsul se afla in lista de produse a cosului dat ca 
+        #Daca produsul se afla in lista de produse a cosului dat ca
         #parametru, este scos si adaugat in lista de produse valabile din marketplace
         cart_products = self.database['reserved_products'].get(identifier_cart, [])
         if product in cart_products:

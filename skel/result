@@ -3,16 +3,16 @@ Finished test 1
 Test 1:		PASSED
 Starting test 2
 Finished test 2
-Test 2:		FAILED
+Test 2:		PASSED
 Starting test 3
 Finished test 3
-Test 3:		FAILED
+Test 3:		PASSED
 Starting test 4
 Finished test 4
 Test 4:		PASSED
 Starting test 5
 Finished test 5
-Test 5:		FAILED
+Test 5:		PASSED
 Starting test 6
 Finished test 6
 Test 6:		PASSED
@@ -28,3 +28,127 @@ Test 9:		PASSED
 Starting test 10
 Finished test 10
 Test 10:		PASSED
+
+Run pylint
+
+************* Module pylintrc
+pylintrc:1:0: E0015: Unrecognized option found: no-space-check (unrecognized-option)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'print-statement' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'parameter-unpacking' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'unpacking-in-except' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'old-raise-syntax' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'backtick' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'import-star-module-level' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'apply-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'basestring-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'buffer-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'cmp-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'coerce-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'execfile-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'file-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'long-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'raw_input-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'reduce-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'standarderror-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'unicode-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'xrange-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'coerce-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'delslice-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'getslice-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'setslice-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'no-absolute-import' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'old-division' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'dict-iter-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'dict-view-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'next-method-called' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'metaclass-assignment' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'indexing-exception' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'raising-string' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'reload-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'oct-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'hex-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'nonzero-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'cmp-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'input-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'round-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'intern-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'unichr-builtin' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'map-builtin-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'zip-builtin-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'range-builtin-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'filter-builtin-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'using-cmp-argument' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'div-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylint: Command line or configuration file:1: UserWarning: Specifying exception names in the overgeneral-exceptions option without module name is deprecated and support for it will be removed in pylint 3.0. Use fully qualified name (maybe 'builtins.BaseException' ?) instead.
+pylint: Command line or configuration file:1: UserWarning: Specifying exception names in the overgeneral-exceptions option without module name is deprecated and support for it will be removed in pylint 3.0. Use fully qualified name (maybe 'builtins.Exception' ?) instead.
+pylintrc:1:0: R0022: Useless option value for '--disable', 'idiv-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'rdiv-method' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'exception-message-attribute' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'invalid-str-codec' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'sys-max-int' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'bad-python3-import' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-string-function' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-str-translate-call' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-itertools-function' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-types-field' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'next-method-defined' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'dict-items-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'dict-keys-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'dict-values-not-iterating' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-operator-function' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-urllib-function' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'xreadlines-attribute' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'deprecated-sys-function' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'exception-escape' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: R0022: Useless option value for '--disable', 'comprehension-escape' was removed from pylint, see https://github.com/PyCQA/pylint/pull/4942. (useless-option-value)
+pylintrc:1:0: W0012: Unknown option value for '--disable', expected a valid pylint message and got 'long-suffix' (unknown-option-value)
+pylintrc:1:0: W0012: Unknown option value for '--disable', expected a valid pylint message and got 'old-ne-operator' (unknown-option-value)
+pylintrc:1:0: W0012: Unknown option value for '--disable', expected a valid pylint message and got 'old-octal-literal' (unknown-option-value)
+pylintrc:1:0: W0012: Unknown option value for '--disable', expected a valid pylint message and got 'non-ascii-bytes-literal' (unknown-option-value)
+pylintrc:1:0: W0012: Unknown option value for '--disable', expected a valid pylint message and got 'eq-without-hash' (unknown-option-value)
+************* Module consumer
+tema/consumer.py:59:0: C0301: Line too long (102/100) (line-too-long)
+tema/consumer.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+tema/consumer.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+************* Module marketplace
+tema/marketplace.py:45:0: C0301: Line too long (112/100) (line-too-long)
+tema/marketplace.py:54:0: C0301: Line too long (147/100) (line-too-long)
+tema/marketplace.py:65:0: C0301: Line too long (106/100) (line-too-long)
+tema/marketplace.py:88:0: C0301: Line too long (151/100) (line-too-long)
+tema/marketplace.py:89:0: C0301: Line too long (139/100) (line-too-long)
+tema/marketplace.py:93:0: C0301: Line too long (113/100) (line-too-long)
+tema/marketplace.py:120:0: C0301: Line too long (139/100) (line-too-long)
+tema/marketplace.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+tema/marketplace.py:5:0: C0115: Missing class docstring (missing-class-docstring)
+tema/marketplace.py:37:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:40:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+tema/marketplace.py:50:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:54:108: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+tema/marketplace.py:59:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:62:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+tema/marketplace.py:71:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:92:15: W0718: Catching too general exception Exception (broad-exception-caught)
+tema/marketplace.py:88:112: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+tema/marketplace.py:89:104: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+tema/marketplace.py:93:86: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+tema/marketplace.py:96:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:111:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:114:8: R1732: Consider using 'with' for resource-allocating operations (consider-using-with)
+tema/marketplace.py:120:97: C2801: Unnecessarily calls dunder method __str__. Use str built-in function. (unnecessary-dunder-call)
+tema/marketplace.py:127:0: C0115: Missing class docstring (missing-class-docstring)
+tema/marketplace.py:131:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:138:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:148:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:155:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:156:8: W0612: Unused variable 'producer_id' (unused-variable)
+tema/marketplace.py:170:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:184:4: C0116: Missing function or method docstring (missing-function-docstring)
+tema/marketplace.py:185:8: W0612: Unused variable 'producer_id' (unused-variable)
+tema/marketplace.py:194:8: W0612: Unused variable 'cart_id_2' (unused-variable)
+************* Module producer
+tema/producer.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+tema/producer.py:4:0: C0115: Missing class docstring (missing-class-docstring)
+
+------------------------------------------------------------------
+Your code has been rated at 8.07/10 (previous run: 7.46/10, +0.61)
+
