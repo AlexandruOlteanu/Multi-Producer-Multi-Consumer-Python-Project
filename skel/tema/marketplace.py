@@ -35,24 +35,14 @@ class Marketplace:
             self.database[key] = {}
 
     def register_producer(self):
-        """
-        Returns an id for the producer that calls this.
-        """
-        identifier_producer = None
-        try:
-            # using lock_producer -> make sure that only one thread at a time access
-            self.lock_producer.acquire()
-            identifier_producer = self.identifier_producer
-            # increment for uniq id
-            self.identifier_producer += 1
-            # init an empty list that prod can add to marketplace
-            self.database['available_products'][identifier_producer] = []
-            self.logger.info("Registering producer .. , id: %s", identifier_producer)
-        except Exception as exc_catch:
-            self.logger.error("Error registering producer .. : %s", str(exc_catch))
-        finally:
-            self.lock_producer.release()
-            return identifier_producer
+
+        self.lock_producer.acquire()
+        self.identifier_producer = self.identifier_producer + 1
+        identifier_producer = self.identifier_producer - 1
+        self.logger.info("Operation Accepted: Succesfully registered producer with id: %s", identifier_producer)
+        self.database['available_products'][identifier_producer] = []
+        self.lock_producer.release()
+        return identifier_producer
 
     def publish(self, identifier_producer, product):
         """
